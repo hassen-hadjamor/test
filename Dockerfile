@@ -8,6 +8,7 @@ RUN cd /src/github.com/ibrokethecloud/fleet-simple-demo \
 ## Using alpine
 FROM alpine
 COPY --from=builder /root/fleet-simple-demo /fleet-simple-demo
+COPY README.md README.md
 WORKDIR /
 RUN touch /health
 ENTRYPOINT ["/fleet-simple-demo"]
