@@ -78,6 +78,7 @@ func main() {
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, syscall.SIGTERM)
 
+	// add by haassen
 	//Wait for sigterm
 	<-c
 
