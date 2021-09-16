@@ -17,6 +17,7 @@ spec:
       containers:
       - name: fleet-simple-app
         image: gmehta3/fleet-simple-app:v2
+        imagePullPolicy: Always
         ports:
         - name: web
           containerPort: 8080
